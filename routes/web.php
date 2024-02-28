@@ -21,8 +21,13 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+//admin panel route
+Route::get('/', function () {
+    return view('auth.register');
+});
+
 Route::get('/admin',[BackendController::class,'admin'] )->name('admin');
-Route::get('/',[FrontendController::class,'home'] )->name('home');
+Route::get('/home',[FrontendController::class,'home'] )->name('home');
 Route::get('/search',[FrontendController::class,'search'] )->name('search');
 
 //product_details start

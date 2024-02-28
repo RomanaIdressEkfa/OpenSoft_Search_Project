@@ -24,6 +24,8 @@
 </style>
 <body>
 
+    @include('frontend.navbar')
+    
 <form action="{{url('/search')}}" method="GET" class="max-w-lg mx-auto">
     <div class="flex">
 
